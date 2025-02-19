@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #0A1F44, #000000);
+    color: white;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+.logo-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+}
+
+.logo {
+    width: 200px;
+    animation: floatLogo 4s ease-in-out infinite;
+}
+
+@keyframes floatLogo {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+}
+
+.btn {
+    padding: 12px 24px;
+    background: #1E90FF;
+    color: white;
+    border: none;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background: #0A74DA;
+    transform: scale(1.05);
+}
+
+.content {
+    padding: 50px 20px;
+}
+
+footer {
+    padding: 20px;
+    font-size: 14px;
+    background: #000000;
+}
